@@ -5,7 +5,7 @@
   z-index: 1;
 }
 .header h4 {
-  float: right;
+  float: center;
 }
 .content {
   display: flex;
@@ -94,8 +94,4 @@
 }
 .stopInteractions {
   pointer-events: none;
-}
-.footer {
-  margin-top: 50px;
-  text-align: center;
 }
