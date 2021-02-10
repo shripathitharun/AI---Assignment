@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="stylesheet" href="/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header">
+      <span id="menu-toggler" class="btn btn-primary">Menu</span>
+      <h4>AI assignment</h4>
+    </div>
+    <div class="content">
+      <div id="menu" class="menu">
+        <h4>Action Panel</h4>
+        <label for="rows">Rows: </label>
+        <input id="rows" type="number" name="rows" value="10" />
+        <br />
+        <label for="columns">Cols: </label>
+        <input id="columns" type="number" name="columns" value="15" />
+        <div class="buttonContainer">
+          <button class="btn btn-primary" id="resetGrid">Reset Grid</button>
+        </div>
+        <div class="buttonContainer">
+          <button class="btn btn-primary" id="changeEndNodes">
+            Change End Cells
+          </button>
+        </div>
+        <div class="buttonContainer">
+          <button class="btn btn-primary" id="startAlgorithm">
+            Start Algorithm
+          </button>
+        </div>
+        <div class="legend">
+          <h4>Legend</h4>
+          <div class="legendBox">
+            <div class="cell" style="background-color: green"></div>
+            <div class="legendDescription">Start Cell</div>
+          </div>
+          <div class="legendBox">
+            <div class="cell" style="background-color: red"></div>
+            <div class="legendDescription">End Cell</div>
+          </div>
+          <div class="legendBox">
+            <div class="cell" style="background-color: blue"></div>
+            <div class="legendDescription">Obstacle</div>
+          </div>
+          <div class="legendBox">
+            <div class="cell" style="background-color: orange"></div>
+            <div class="legendDescription">Path</div>
+          </div>
+          <div class="legendBox">
+            <div class="cell" style="background-color: aquamarine"></div>
+            <div class="legendDescription">Visited Cell</div>
+          </div>
+        </div>
+        <div class="footer">
+          <p>18UCS028_Tharun Teja Shripathi</p>
+        </div>
+      </div>
+      <div class="gridContainer">
+        <div class="grid"></div>
+      </div>
+    </div>
+
+    <script src="/js/jquery-3.5.1.min.js" charset="utf-8"></script>
+    <script src="/js/jquery-ui.min.js" charset="utf-8"></script>
+    <script src="/js/pageFunctions.js" charset="utf-8"></script>
+    <script src="/js/gridConstruction.js" charset="utf-8"></script>
+    <script src="/js/changeEndNodes.js" charset="utf-8"></script>
+    <script src="/js/djikstra.js" charset="utf-8"></script>
+  </body>
+</html>
