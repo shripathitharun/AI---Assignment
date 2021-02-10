@@ -4,6 +4,10 @@
   height: 50px;
   z-index: 1;
 }
+.header span {
+  position: absolute;
+  right: 270px;
+}
 .header h4 {
   float: left;
 }
