@@ -5,7 +5,7 @@
   z-index: 1;
 }
 .header h4 {
-  float: right;
+  float: left;
 }
 .content {
   position: absolute;
