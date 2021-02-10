@@ -8,6 +8,8 @@
   float: right;
 }
 .content {
+  position: absolute;
+  right: 0px;
   display: flex;
   height: calc(100vh - 50px);
 }
